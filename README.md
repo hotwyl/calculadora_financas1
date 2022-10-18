@@ -5,7 +5,7 @@ Desenvolvido com aplicações de conhecimento em HTML CSS JS com base em tutoria
 
 ### Acesse através do link:
 
-- [v1](https://hotwyl.github.io/finance/)
+- [acessar site versão 1](https://hotwyl.github.io/finance/) 
 
 
 
@@ -17,13 +17,13 @@ Desenvolvido com aplicações de conhecimento em HTML CSS JS com base em tutoria
 - Cálculo automático de saldo
 
 
-## Stack utilizada
+## Stacks
 
 **Front-end:** HTML5, CSS3, JAVA SCRIPT 5, BOOTSTRAP 5
 
 
 ## Autores
 
-- [@william Camargo](https://www.github.com/hotwyl)
+- [@william Camargo](https://www.linkedin.com/in/william-camargo-50aab85b/)
 
 
