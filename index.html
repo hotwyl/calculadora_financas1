@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description"
+          content="Sistema de Finança Pessoal para controle financeiro e despesas pessoal.">
+    <meta name="keywords"
+          content="controle financeiro, finança pessoal, gerenciador de despesa">
+
+    <title>Finance</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link  rel='stylesheet' href="./assets/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="./assets/js/jquery-3.5.1.js"></script>
+
+    <script src="./assets/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Finance</span>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="resume my-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card p-1">
+                    <div class="card-body text-center">
+                        Entradas: R$ <span class="incomes">0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-1">
+                    <div class="card-body text-center">
+                        Saídas: R$ <span class="expenses">0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-1">
+                    <div class="card-body text-center">
+                        Saldo: R$ <span class="total">0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newItem">
+        <hr>
+        <div class="row">
+
+            <div class="col-md mb-1">
+                <div class="input-group input-group-sm divDesc">
+                    <div class="input-group-text">Descrição</div>
+                    <input type="text" class="form-control" id="desc"  placeholder="Descrição" required/>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-1">
+                <div class="input-group input-group-sm divAmount">
+                    <div class="input-group-text">Valor R$: </div>
+                    <input type="number" class="form-control" id="amount" required/>
+                </div>
+            </div>
+
+            <div class="col-md-2 mb-1">
+                <div class="input-group input-group-sm divType">
+                    <div class="input-group-text">Tipo</div>
+                    <select id="type" class="form-select required">
+                        <option>Entrada</option>
+                        <option>Saída</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-1 d-grid gap-2">
+                <button id="btnNew" class="btn btn-primary btn-sm ">Incluir</button>
+            </div>
+
+        </div>
+        <hr>
+    </section>
+
+    <section class="divTable mt-3">
+
+        <table class="display" id="example">
+            <thead>
+            <tr>
+                <th>Descrição</th>
+                <th class="columnAmount">Valor</th>
+                <th class="columnType">Tipo</th>
+                <th class="columnAction"></th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer class="py-3 my-4">
+    <p class="text-center text-muted">© 2022 Company, Inc | Feito com ♥ por <a href="https://www.linkedin.com/in/william-camargo-50aab85b/">hotwyl</a></p>
+</footer>
+
+
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/sweetalert2@11.js"></script>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
