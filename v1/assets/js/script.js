@@ -155,6 +155,7 @@ $(document).ready(function () {
 
 
 const tbody = document.querySelector("tbody");
+const datItem = document.querySelector("#dat");
 const descItem = document.querySelector("#desc");
 const amount = document.querySelector("#amount");
 const type = document.querySelector("#type");
@@ -167,7 +168,7 @@ const total = document.querySelector(".total");
 let items;
 
 btnNew.onclick = () => {
-    if (descItem.value === "" || amount.value === "" || type.value === "") {
+    if (datItem.value === "" || descItem.value === "" || amount.value === "" || type.value === "") {
         return Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -176,6 +177,7 @@ btnNew.onclick = () => {
     }
 
     items.push({
+        dat: datItem.value,
         desc: descItem.value,
         amount: Math.abs(amount.value).toFixed(2),
         type: type.value,
@@ -199,6 +201,7 @@ function insertItem(item, index) {
     let tr = document.createElement("tr");
 
     tr.innerHTML = `
+    <td>${item.dat}</td>
     <td>${item.desc}</td>
     <td>R$ ${item.amount}</td>
     <td class="columnType">${
